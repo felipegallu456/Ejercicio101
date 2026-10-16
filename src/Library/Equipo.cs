@@ -4,13 +4,13 @@ namespace Library
 {
     public class Equipo
     {
-        public string Codigo { get; set; }
+        public int Codigo { get; set; }
 
         public string Nombre { get; set; }
 
         public bool Disponibilidad { get; private set; }
 
-        public Equipo(string codigo, string nombre)
+        public Equipo(int codigo, string nombre)
         {
             this.Codigo=codigo;
             this.Nombre=nombre;
