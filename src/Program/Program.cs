@@ -16,8 +16,8 @@ namespace Ucu.Poo.RegistrarPrestamos
     {
         public static void Main(string[] args)
         {
-            Equipo notebook = new Equipo("EQP-001", "Notebook Intel Core");
-            Equipo proyector = new Equipo("EQP-002", "Proyector Magcubic");
+            Equipo notebook = new Equipo(001, "Notebook Intel Core");
+            Equipo proyector = new Equipo(002, "Proyector Magcubic");
 
             Estudiante estudiante1 = new Estudiante("Felipe Galluzzo", "5714478-4");
             Prestamo prestamoActual = null;
