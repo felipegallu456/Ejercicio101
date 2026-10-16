@@ -1,0 +1,25 @@
+
+classDiagram
+class Estudiante{
+    +string Nombre
+    +string Documento 
+    +Estudiante(string nombre,string documento )
+}
+class Equipo{
+    +string Nombre
+    +int Codigo 
+    +bool Disponibildad 
+    +Equipo(string codigo, string nombre )
+    +EstadoNoDisponible() void
+    +EstadoDisponible() void 
+}
+class Prestamo{
+    +DateTime FechaDelPrestamo
+    +DateTime? FechaDeDevolucion
+    +bool PrestamoActivo 
+    +Prestamo(Estudiante estudiante, Equipo equipo)
+    +PrestamoRegistrado () void
+
+}
+Prestamo "1" --> "1" Estudiante : Estudiante
+Prestamo "1" --> "1" Equipo : Equipo 
