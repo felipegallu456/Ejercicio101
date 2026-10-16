@@ -8,7 +8,6 @@ namespace Library
 
         public string Documento { get; set; }
 
-        public bool Disponibilidad {get; private set; }
 
         public Estudiante(string nombre, string documento)
         {
